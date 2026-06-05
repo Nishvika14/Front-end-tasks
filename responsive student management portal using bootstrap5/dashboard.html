@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bWkCaw6uwmLsehGX9CRBZrwPOGakEGhSjw&s');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        .dashboard-card {
+            transition: 0.3s;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="overlay">
+        <div class="container">
+            <h1 class="text-center text-white mb-5">Student Dashboard</h1>
+            <!--stats-->
+            <div class="row g-4 mb-5">
+                <div class="col-md-3">
+                    <div class="card dashboard-card bg-opacity-75 bg-primary text-white shadow">
+                        <div class="card-body text-center">
+                            <h5>Total Students</h5>
+                            <h2>500</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white bg-success text-white shadow-lg dashboard-card bg-opacity-75">
+                        <div class="card-body text-center">
+                            <h5>Present Students</h5>
+                            <h2>450</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card dashboard-card bg-opacity-75 text-center bg-danger text-white shadow-lg">
+                        <div class="card-body text-center">
+                            <h5>Absent Students</h5>
+                            <h2>50</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card dashboard-card bg-opacity-75 text-center bg-warning text-dark shadow-lg">
+                        <div class="card-body text-center">
+                            <h5>Placements</h5>
+                            <h2>320</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--table start-->
+            <div class="row mb-4 justify-content-end">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Student">
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card table-card shadow-lg border-0">
+                <div class="card-header bg-dark text-white p-2">Student Records</div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-striped shadow">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Roll Number</th>
+                                    <th>Name</th>
+                                    <th>Branch</th>
+                                    <th>Attendance</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>101</td>
+                                    <td>Nishvika</td>
+                                    <td>CSD</td>
+                                    <td>
+                                        <span class="badge bg-success">92%</span>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-success">Excellent</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>102</td>
+                                    <td>Pallavi</td>
+                                    <td>CSE</td>
+                                    <td>
+                                        <span class="badge bg-primary">88%</span>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-primary">Good</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>103</td>
+                                    <td>Sanjana</td>
+                                    <td>AI & ML</td>
+                                    <td>
+                                        <span class="badge bg-warning">71%</span>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-warning text-dark">Average</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>104</td>
+                                    <td>Lekhana</td>
+                                    <td>Cyber Security</td>
+                                    <td>
+                                        <span class="badge bg-danger">58%</span>
+                                    </td>
+                                    <td><span class="badge bg-danger">Low</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
