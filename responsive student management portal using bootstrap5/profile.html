@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Student Profile</title>
+    <style>
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bWkCaw6uwmLsehGX9CRBZrwPOGakEGhSjw&s');
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px 0;
+        }
+
+        .student-card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            overflow: hidden;
+            color: white;
+            transition: all 0.4s ease;
+        }
+
+        .student-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-top: 20px;
+        }
+
+        .card-header {
+            background: transparent;
+            border: none;
+        }
+
+        .card-footer {
+            background: transparent;
+            border: none;
+        }
+
+        .page-title {
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1 class="text-center page-title mb-5">Student Profiles</h1>
+            <div class="row g-4">
+                <!--card1-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card student-card h-100 text-center">
+                        <div class="card-header">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBygkaBv7p2xuxabCdHP6NoD9QdlqXGhLBw&s"
+                                alt="student-img" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alexa</h3>
+                            <hr>
+                            <p><strong>Roll No:</strong> 23B81A67F6</p>
+                            <p><strong>Branch:</strong> CSD</p>
+                            <p><strong>Email:</strong> alex0@example.com</p>
+                            <p><strong>Mobile:</strong>99999-99999</p>
+                        </div>
+                        <div class="card-footer pb-4">
+                            <button class="btn btn-primary px-4">More Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card2-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card student-card h-100 text-center">
+                        <div class="card-header">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWTVtnovMi0WnCE6QKQdlNOvHo98kGNJl7nRpTUASs_6J9FJzfd4Ft2yk&s"
+                                alt="student-img" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3>Jagadesh Jag</h3>
+                            <hr>
+                            <p><strong>Roll No:</strong> 23B81A67H5</p>
+                            <p><strong>Branch:</strong> AI & ML</p>
+                            <p><strong>Email:</strong> jag0@example.com</p>
+                            <p><strong>Mobile:</strong> 98981-98981</p>
+                        </div>
+                        <div class="card-footer pb-4">
+                            <button class="btn btn-primary px-4">More Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card3-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card student-card h-100 text-center">
+                        <div class="card-header">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6vVHn_u_ZiMhghRwf7oz5YRfFcYejZMW0pA&s"
+                                alt="student-img" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3>Andres</h3>
+                            <hr>
+                            <p><strong>Roll No:</strong> 23B81A67F1</p>
+                            <p><strong>Branch:</strong> IT</p>
+                            <p><strong>Email:</strong> andress@example.com</p>
+                            <p><strong>Mobile:</strong> 12345-98765</p>
+                        </div>
+                        <div class="card-footer pb-4">
+                            <button class="btn btn-primary px-4">More Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card4-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card student-card h-100 text-center">
+                        <div class="card-header">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSmnL-rTu3hQ67FzEMfZj252K3zfJEB6PrBg&s"
+                                alt="student-img" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3>Kaushi</h3>
+                            <p><strong>Roll No:</strong> 23B81A67F7</p>
+                            <p><strong>Branch:</strong> EEE</p>
+                            <p><strong>Email:</strong> kaushh@example.com</p>
+                            <p><strong>Mobile:</strong> 00000-99999</p>
+                        </div>
+                        <div class="card-footer pb-4">
+                            <button class="btn btn-primary px-4">More Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card5-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card student-card h-100 text-center">
+                        <div class="card-header">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WrTGk28J_Wwni_eMyguCrHJdQUaN1sosoA&s"
+                                alt="student-img" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3>Astine</h3>
+                            <hr>
+                            <p><strong>Roll No:</strong> 23B81A67E7</p>
+                            <p><strong>Branch:</strong> CSE</p>
+                            <p><Strong>Email:</Strong> ashh0@example.com</p>
+                            <p><strong>Mobile:</strong> 98888-89999</p>
+                        </div>
+                        <div class="card-footer pb-4">
+                            <button class="btn btn-primary px-4">More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
