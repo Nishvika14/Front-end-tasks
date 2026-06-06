@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | VidyaSetu Academy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(rgba(15,23,42,.9),
+                    rgba(15,23,42,.9)),
+                url("https://images.unsplash.com/photo-1524178232363-1fb2b075b655");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .glass {
+            background: rgba(255,255,255,.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,.15);
+        }
+
+        .section-title {
+            color: cyan;
+            font-weight: bold;
+        }
+
+        .faculty-card {
+            transition: .4s;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .faculty-img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .stats-card {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold"
+                href="homepage.html">
+
+                VidyaSetu Academy
+
+            </a>
+
+            <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="index.html">
+
+                            Home
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="courses.html">
+
+                            Courses
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active">
+
+                            About
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="contact.html">
+
+                            Contact
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="container py-5 text-center">
+
+        <h1 class="display-4 section-title">
+            About VidyaSetu Academy
+        </h1>
+
+        <p class="lead">
+            Empowering students with industry-ready skills
+            and professional training since 2015.
+        </p>
+
+    </section>
+
+    <!-- History -->
+
+    <section class="container mb-5">
+
+        <div class="card glass text-white">
+
+            <div class="card-body p-4">
+
+                <h2 class="section-title mb-3">
+                    Our History
+                </h2>
+
+                <p>
+                    VidyaSetu Academy was established with a vision
+                    to bridge the gap between academic learning
+                    and industry requirements. Over the years,
+                    we have trained thousands of students in
+                    Web Development, Data Science,
+                    Artificial Intelligence, Cloud Computing,
+                    and Software Development technologies.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Vision Mission -->
+
+    <section class="container mb-5">
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+
+                <div class="card glass text-white h-100">
+
+                    <div class="card-body">
+
+                        <h3 class="section-title">
+                            Vision
+                        </h3>
+
+                        <p>
+                            To become a leading technology
+                            training institute that empowers
+                            students with innovation,
+                            creativity, and professional excellence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="card glass text-white h-100">
+
+                    <div class="card-body">
+
+                        <h3 class="section-title">
+                            Mission
+                        </h3>
+
+                        <p>
+                            To provide high-quality technical
+                            education, practical exposure,
+                            and placement support for
+                            aspiring professionals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+
+    <section class="container mb-5">
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-3">
+
+                <div class="card bg-info text-dark stats-card">
+
+                    <div class="card-body">
+
+                        <h2>5000+</h2>
+
+                        <h5>Students Trained</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card bg-success stats-card">
+
+                    <div class="card-body">
+
+                        <h2>120+</h2>
+
+                        <h5>Courses</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card bg-warning text-dark stats-card">
+
+                    <div class="card-body">
+
+                        <h2>95%</h2>
+
+                        <h5>Placement Rate</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card bg-danger stats-card">
+
+                    <div class="card-body">
+
+                        <h2>50+</h2>
+
+                        <h5>Expert Trainers</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Faculty -->
+
+    <section class="container py-5">
+
+        <h2 class="text-center section-title mb-5">
+            Meet Our Faculty
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Faculty 1 -->
+
+            <div class="col-lg-4">
+
+                <div class="card glass text-white faculty-card">
+
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                        class="card-img-top faculty-img">
+
+                    <div class="card-body">
+
+                        <h4>Dr. Snehal</h4>
+
+                        <p>
+                            Data Science Expert
+                        </p>
+
+                        <p>
+                            Experience: 12 Years
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 2 -->
+
+            <div class="col-lg-4">
+
+                <div class="card glass text-white faculty-card">
+
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                        class="card-img-top faculty-img">
+
+                    <div class="card-body">
+
+                        <h4>Ms. Sukhriya</h4>
+
+                        <p>
+                            AI & ML Specialist
+                        </p>
+
+                        <p>
+                            Experience: 10 Years
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 3 -->
+
+            <div class="col-lg-4">
+
+                <div class="card glass text-white faculty-card">
+
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg"
+                        class="card-img-top faculty-img">
+
+                    <div class="card-body">
+
+                        <h4>Mr. Malhotra</h4>
+
+                        <p>
+                            Cloud Architect
+                        </p>
+
+                        <p>
+                            Experience: 15 Years
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark py-4">
+
+        <div class="container text-center">
+
+            <p>
+                &copy; 2026 VidyaSetu Academy
+            </p>
+
+            <p>
+                Hyderabad | +91 9876543210 |
+                info@vidyasetu.com
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

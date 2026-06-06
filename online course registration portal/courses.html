@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | VidyaSetu Academy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        .glass {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .course-card {
+            transition: 0.4s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0,0,0,0.5);
+        }
+
+        .course-img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            color: cyan;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="homepage.html">
+                VidyaSetu Academy
+            </a>
+
+            <button class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-info ms-2">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="container py-5">
+
+        <h1 class="text-center section-title mb-3">
+            Explore Our Courses
+        </h1>
+
+        <p class="text-center text-light mb-5">
+            Industry-Oriented Courses Designed for Future Professionals
+        </p>
+
+        <!-- Search -->
+        <div class="row mb-5">
+
+            <div class="col-md-6 mx-auto">
+
+                <div class="input-group">
+
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Search Courses">
+
+                    <button class="btn btn-info">
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Courses -->
+        <div class="row g-4">
+
+            <!-- Course 1 -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card glass text-white h-100 course-card">
+
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+                         class="card-img-top course-img">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success mb-2">
+                            Most Popular
+                        </span>
+
+                        <h4>Web Development</h4>
+
+                        <p>Duration: 6 Months</p>
+
+                        <p>Fee: ₹25,000</p>
+
+                        <button class="btn btn-info"
+                                data-bs-toggle="modal"
+                                data-bs-target="#webModal">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Course 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card glass text-white h-100 course-card">
+
+                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935"
+                         class="card-img-top course-img">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-primary mb-2">
+                            Beginner
+                        </span>
+
+                        <h4>Python Programming</h4>
+
+                        <p>Duration: 4 Months</p>
+
+                        <p>Fee: ₹20,000</p>
+
+                        <button class="btn btn-info">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card glass text-white h-100 course-card">
+
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+                         class="card-img-top course-img">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-warning text-dark mb-2">
+                            Trending
+                        </span>
+
+                        <h4>Data Science</h4>
+
+                        <p>Duration: 8 Months</p>
+
+                        <p>Fee: ₹40,000</p>
+
+                        <button class="btn btn-info">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card glass text-white h-100 course-card">
+
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+                         class="card-img-top course-img">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-danger mb-2">
+                            Advanced
+                        </span>
+
+                        <h4>AI & Machine Learning</h4>
+
+                        <p>Duration: 8 Months</p>
+
+                        <p>Fee: ₹45,000</p>
+
+                        <button class="btn btn-info">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Course 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card glass text-white h-100 course-card">
+
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+                         class="card-img-top course-img">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-secondary mb-2">
+                            Intermediate
+                        </span>
+
+                        <h4>Java Programming</h4>
+
+                        <p>Duration: 5 Months</p>
+
+                        <p>Fee: ₹22,000</p>
+
+                        <button class="btn btn-info">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Course 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card glass text-white h-100 course-card">
+
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa"
+                         class="card-img-top course-img">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-info mb-2">
+                            Industry Ready
+                        </span>
+
+                        <h4>Cloud Computing</h4>
+
+                        <p>Duration: 6 Months</p>
+
+                        <p>Fee: ₹35,000</p>
+
+                        <button class="btn btn-info">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="webModal">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content bg-dark text-white">
+
+                <div class="modal-header">
+
+                    <h4>Web Development</h4>
+
+                    <button class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <h5>Topics Covered</h5>
+
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap 5</li>
+                        <li>JavaScript</li>
+                        <li>React JS</li>
+                        <li>Node JS</li>
+                    </ul>
+
+                    <p>
+                        Includes live projects,
+                        certification and placement assistance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-4 mt-5">
+
+        <div class="container text-center">
+
+            <p>
+                &copy; 2026 VidyaSetu Academy
+            </p>
+
+            <p>
+                Hyderabad | +91 9876543210 |
+                info@edutech.com
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
