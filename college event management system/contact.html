@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ciencia 2k26</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background:
+                linear-gradient(
+                    rgba(15, 23, 42, .90),
+                    rgba(15, 23, 42, .90)
+                ),
+                url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, .08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, .15);
+        }
+
+        .section-title {
+            color: cyan;
+            font-weight: bold;
+        }
+
+        .contact-card {
+            transition: .4s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .form-control,
+        .form-control:focus {
+            background: rgba(255, 255, 255, .10);
+            color: white;
+            border: none;
+            box-shadow: none;
+        }
+
+        .form-control::placeholder {
+            color: #ddd;
+        }
+
+        .btn {
+            border-radius: 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer a:hover {
+            color: cyan;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold"
+                href="index.html">
+
+                Ciencia 2k26
+
+            </a>
+
+            <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="events.html">
+                            Events
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="registration.html">
+                            Registration
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="schedule.html">
+                            Schedule
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="faq.html">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Header -->
+
+    <section class="container py-5 text-center">
+
+        <h1 class="display-4 section-title">
+            Contact Us
+        </h1>
+
+        <p class="lead">
+            Have questions? Reach out to our coordinators.
+        </p>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="container pb-5">
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- Contact Form -->
+
+            <div class="col-lg-8">
+
+                <div class="card glass text-white shadow-lg h-100">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="section-title mb-4">
+                            Send a Message
+                        </h3>
+
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Name
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Enter Your Name">
+
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Email
+                                    </label>
+
+                                    <input type="email"
+                                        class="form-control"
+                                        placeholder="Enter Your Email">
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Subject
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Enter Subject">
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    rows="6"
+                                    class="form-control"
+                                    placeholder="Type your message here"></textarea>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="btn btn-info btn-lg"
+                                data-bs-toggle="modal"
+                                data-bs-target="#contactModal">
+
+                                Send Message
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Information -->
+
+            <div class="col-lg-4">
+
+                <div class="card glass text-white h-100 contact-card">
+
+                    <div class="card-body">
+
+                        <h3 class="section-title mb-4">
+                            Contact Information
+                        </h3>
+
+                        <p>
+                            Hyderabad, Telangana
+                        </p>
+
+                        <p>
+                            cienciacvr@college.edu
+                        </p>
+
+                        <p>
+                            +91 91010-10101
+                        </p>
+
+                        <hr>
+
+                        <h5 class="text-info">
+                            Faculty Coordinator
+                        </h5>
+
+                        <p>
+                            Dr. Rohit Sharma
+                        </p>
+
+                        <p>
+                            +91 91111-11111
+                        </p>
+
+                        <p>
+                            rahul@college.edu
+                        </p>
+
+                        <hr>
+
+                        <h5 class="text-info">
+                            Student Coordinator
+                        </h5>
+
+                        <p>
+                            Priya Reddy
+                        </p>
+
+                        <p>
+                            +91 9988776655
+                        </p>
+
+                        <p>
+                            priya@college.edu
+                        </p>
+
+                        <hr>
+
+                        <h5 class="text-info mb-3">
+                            Follow Us
+                        </h5>
+
+                        <div class="d-grid gap-2">
+
+                            <button class="btn btn-primary">
+                                Facebook
+                            </button>
+
+                            <button class="btn btn-danger">
+                                Instagram
+                            </button>
+
+                            <button class="btn btn-info text-white">
+                                LinkedIn
+                            </button>
+
+                            <button class="btn btn-dark border">
+                                YouTube
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Success Modal -->
+
+    <div class="modal fade"
+        id="contactModal">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content bg-dark text-white">
+
+                <div class="modal-header">
+
+                    <h4>
+                        Message Sent
+                    </h4>
+
+                    <button
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    Thank You!!!
+
+                    <br><br>
+
+                    Your message has been successfully sent.
+
+                    <hr>
+
+                    Our team will contact you shortly.
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button
+                        class="btn btn-info"
+                        data-bs-dismiss="modal">
+
+                        OK
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark py-4">
+
+        <div class="container text-center">
+
+            <p>
+                &copy; 2026 Ciencia. All Rights Reserved.
+            </p>
+
+            <p>
+                cienciacvr@college.edu |
+                +91 90000-00000
+            </p>
+
+            <p>
+                Hyderabad, Telangana
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
