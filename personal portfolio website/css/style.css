@@ -1,0 +1,118 @@
+/* General */
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+
+.navbar{
+    background-color: #0d6efd !important;
+}
+
+.navbar-brand,
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: #dbeafe !important;
+}
+
+/* Section Titles */
+
+.section-title{
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Cards */
+
+.card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+/* Profile Image */
+
+.profile-img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0d6efd;
+}
+
+/* Buttons */
+
+.btn-custom{
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover{
+    background-color: #0b5ed7;
+    color: white;
+}
+
+/* Skills Progress */
+
+.progress{
+    height: 12px;
+    border-radius: 10px;
+}
+
+.progress-bar{
+    background-color: #0d6efd;
+}
+
+/* Forms */
+
+.form-control,
+.form-select{
+    border-radius: 8px;
+}
+
+/* Main Content */
+
+main{
+    flex: 1;
+}
+
+/* Footer Fixed at Bottom */
+
+footer{
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+/* Social Icons */
+
+.social-link{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.social-link:hover{
+    color: #084298;
+}
