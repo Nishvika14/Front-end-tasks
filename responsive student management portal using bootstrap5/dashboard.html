@@ -42,7 +42,7 @@
                     <div class="card dashboard-card bg-opacity-75 bg-primary text-white shadow">
                         <div class="card-body text-center">
                             <h5>Total Students</h5>
-                            <h2>500</h2>
+                            <h2 id="totalStudents">0</h2>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                     <div class="card text-white bg-success text-white shadow-lg dashboard-card bg-opacity-75">
                         <div class="card-body text-center">
                             <h5>Present Students</h5>
-                            <h2>450</h2>
+                            <h2 id="presentStudents">0</h2>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="card dashboard-card bg-opacity-75 text-center bg-danger text-white shadow-lg">
                         <div class="card-body text-center">
                             <h5>Absent Students</h5>
-                            <h2>50</h2>
+                            <h2 id="absentStudents">0</h2>
                         </div>
                     </div>
                 </div>
@@ -70,12 +70,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-center my-3">
+                    <button class="btn btn-success" onclick="markAttendance()">
+                        Generate Attendance
+                    </button>
+                </div>
             </div>
             <!--table start-->
             <div class="row mb-4 justify-content-end">
                 <div class="col-md-6">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search Student">
+                        <input type="text" id="searchBox" class="form-control" placeholder="Search Student"
+                            onkeyup="searchStudent()">
                         <button class="btn btn-primary">Search</button>
                     </div>
                 </div>
@@ -94,49 +100,8 @@
                                     <th>Status</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>101</td>
-                                    <td>Nishvika</td>
-                                    <td>CSD</td>
-                                    <td>
-                                        <span class="badge bg-success">92%</span>
-                                    </td>
-                                    <td>
-                                        <span class="badge bg-success">Excellent</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>102</td>
-                                    <td>Pallavi</td>
-                                    <td>CSE</td>
-                                    <td>
-                                        <span class="badge bg-primary">88%</span>
-                                    </td>
-                                    <td>
-                                        <span class="badge bg-primary">Good</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>103</td>
-                                    <td>Sanjana</td>
-                                    <td>AI & ML</td>
-                                    <td>
-                                        <span class="badge bg-warning">71%</span>
-                                    </td>
-                                    <td>
-                                        <span class="badge bg-warning text-dark">Average</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>104</td>
-                                    <td>Lekhana</td>
-                                    <td>Cyber Security</td>
-                                    <td>
-                                        <span class="badge bg-danger">58%</span>
-                                    </td>
-                                    <td><span class="badge bg-danger">Low</span></td>
-                                </tr>
+                            <tbody id="studentTableBody">
+
                             </tbody>
                         </table>
                     </div>
@@ -144,6 +109,17 @@
             </div>
         </div>
     </div>
+    <script src="/responsive student management portal using bootstrap5/js/storage.js"></script>
+    <script src="js/storage.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            updateDashboard();
+            displayStudents();
+
+        };
+    </script>
 </body>
 
 </html>

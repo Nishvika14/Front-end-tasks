@@ -8,11 +8,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        body{
+        body {
             background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bWkCaw6uwmLsehGX9CRBZrwPOGakEGhSjw&s') no-repeat center center fixed;
             background-size: cover;
         }
-        .form-container{
+
+        .form-container {
             max-width: 700px;
             margin: 50px auto;
         }
@@ -30,19 +31,23 @@
                 <form action="#">
                     <div class="mb-3">
                         <label class="form-label">Full Name : </label>
-                        <input type="text" class="form-control" placeholder="Enter Full Name">
+                        <input type="text" class="form-control" placeholder="Enter Full Name" id="fname">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Roll Number : </label>
-                        <input type="text" class="form-control" placeholder="Enter Roll Number">
+                        <input type="text" class="form-control" placeholder="Enter Roll Number" id="rno">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email : </label>
-                        <input type="email" class="form-control" placeholder="Enter Email">
+                        <input type="email" class="form-control" placeholder="Enter Email" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password :</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Mobile Number : </label>
-                        <input type="tel" class="form-control" placeholder="Enter Mobile Number">
+                        <input type="tel" class="form-control" placeholder="Enter Mobile Number" id="mobilenum">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Gender : </label>
@@ -57,7 +62,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Branch : </label>
-                        <select class="form-select">
+                        <select class="form-select" id="branch">
                             <option>Computer Science and Engineering</option>
                             <option>Data Science</option>
                             <option>Cyber Security</option>
@@ -79,15 +84,21 @@
                     </div>
                     <div class="form-check mb-4">
                         <input type="checkbox" class="form-check-input" id="terms">
-                        <label class="form-check-label" for="terms">I Agree to terms and conditions.</label> 
+                        <label class="form-check-label" for="terms">I Agree to terms and conditions.</label>
                     </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary btn-lg">Register</button>
-                    </div>
+                    <!--<div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg" onclick="addStudent()">Register</button>
+                    </div>-->
+                    <button type="button" class="btn btn-primary btn-lg" onclick="registerStudent()">
+
+                        Register
+
+                    </button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="/responsive student management portal using bootstrap5/js/storage.js"></script>
 </body>
 
 </html>
